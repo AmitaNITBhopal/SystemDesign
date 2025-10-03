@@ -38,7 +38,7 @@ public class CustomerDtlsContoller {
 			model.addAttribute("txt", "Success!");
 		}
 		
-		return "AppForm";
+		return "DocUploadPage";
 	}
 	
 	@GetMapping("/") 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+		<form name="form1" method="post" enctype="multipart/form-data" action="/fileupload">
+			<table>
+				<tr>
+					<td>File 1:</td>
+					<td><input type="file" name="file" /></td>
+					<td><input name=action type="submit" value="Upload File1" /></td>
+					<td><h3 name="heading1" th:text="${message1}"/></h3></td>
+				</tr>
+			</table>
+			
+		</form>
+	
+		<form name="form2" method="post" enctype="multipart/form-data" action="/fileupload">
+			<table>
+				<tr>
+					<td>File 2:</td>
+					<td><input type="file" name="file" /></td>
+					<td><input name=action type="submit" value="Upload File2" /></td>
+					<td><h3 th:text="${message2}"/></h3></td>
+				</tr>
+			</table>
+			
+		</form>
+		
+		<form name="form3" method="post" enctype="multipart/form-data" action="/fileupload">
+			<table>
+				<tr>
+					<td>File 3:</td>
+					<td><input type="file" name="file" /></td>
+					<td><input name=action type="submit" value="Upload File3" /></td>
+					<td><h3 th:text="${message3}"/></h3></td>
+				</tr>
+			</table>
+			
+		</form>
+		
+		<form name="form4" method="post" enctype="multipart/form-data" action="/fileupload">
+			<table>
+				<tr>
+					<td>File 4:</td>
+					<td><input type="file" name="file" /></td>
+					<td><input name=action type="submit" value="Upload File4" /></td>
+					<td><h3 th:text="${message4}"/></h3></td>
+				</tr>
+			</table>
+			
+		</form>
+	
+	
+</body>
+</html>

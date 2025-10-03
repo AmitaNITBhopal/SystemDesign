@@ -27,10 +27,10 @@ public class CustomerService {
 			 * +customerDto.getMobileNumber());
 			 */
         	System.out.println("\n\nCustomer already exists!");
+        } else {
+        
+        	Applicant savedCustomer = customerRepository.save(customer);
         }
-        
-        Applicant savedCustomer = customerRepository.save(customer);
-        
     }
 	
 	public CustomerDto fetchAccount(String mobileNumber) {

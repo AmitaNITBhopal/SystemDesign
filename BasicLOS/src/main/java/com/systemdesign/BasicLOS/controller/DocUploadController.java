@@ -1,14 +1,18 @@
-package com.systemdesign.BasicLOS;
+package com.systemdesign.BasicLOS.controller;
 
 import java.io.File;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.systemdesign.BasicLOS.dto.CustomerDto;
 
 @Controller
 public class DocUploadController {
@@ -98,7 +102,7 @@ public class DocUploadController {
 		return ret;
 	}
 	
-public String upload(MultipartFile file) {
+	public String upload(MultipartFile file) {
 		
 		String response = "";
 		
@@ -113,4 +117,12 @@ public String upload(MultipartFile file) {
 	    } 
 	    return "";
 	}
+
+	@PostMapping("/page1")
+	public String CaptureDocuments(Model model) {
+		System.out.println("\n Inside CaptureDocuments :\n");
+		
+		return "PaymentsPage";
+	}
+
 }

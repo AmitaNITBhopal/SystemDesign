@@ -12,7 +12,7 @@
 					<td>File 1:</td>
 					<td><input type="file" name="file" /></td>
 					<td><input name=action type="submit" value="Upload File1" /></td>
-					<td><h3 name="heading1" th:text="${message1}"/></h3></td>
+					<td><h3 th:text="${message1}"/></h3></td>
 				</tr>
 			</table>
 			
@@ -54,6 +54,10 @@
 			
 		</form>
 	
+	
+		<form name="mainform" method="post" action="/page1">
+			<button type="submit" class="btn">Next</button>	
+		</form>
 	
 </body>
 </html>

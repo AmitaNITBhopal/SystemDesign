@@ -6,7 +6,7 @@
 </head>
 <body>
 
-		<form name="form1" method="post" enctype="multipart/form-data" action="/fileupload">
+		<form name="form1" method="post" enctype="multipart/form-data" th:action="@{/fileupload}">
 			<table>
 				<tr>
 					<td>File 1:</td>
@@ -18,7 +18,7 @@
 			
 		</form>
 	
-		<form name="form2" method="post" enctype="multipart/form-data" action="/fileupload">
+		<form name="form2" method="post" enctype="multipart/form-data" th:action="@{/fileupload}">
 			<table>
 				<tr>
 					<td>File 2:</td>
@@ -30,7 +30,7 @@
 			
 		</form>
 		
-		<form name="form3" method="post" enctype="multipart/form-data" action="/fileupload">
+		<form name="form3" method="post" enctype="multipart/form-data" th:action="@{/fileupload}">
 			<table>
 				<tr>
 					<td>File 3:</td>
@@ -42,7 +42,7 @@
 			
 		</form>
 		
-		<form name="form4" method="post" enctype="multipart/form-data" action="/fileupload">
+		<form name="form4" method="post" enctype="multipart/form-data" th:action="@{/fileupload}">
 			<table>
 				<tr>
 					<td>File 4:</td>
@@ -55,7 +55,7 @@
 		</form>
 	
 	
-		<form name="mainform" method="post" action="/page1">
+		<form name="mainform" method="post" th:action="@{/page1}">
 			<button type="submit" class="btn">Next</button>	
 		</form>
 	

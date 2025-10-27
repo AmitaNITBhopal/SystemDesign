@@ -1,0 +1,9 @@
+com\systemdesign\BasicLOSOnAzure\BasicLosApplication.class
+com\systemdesign\BasicLOSOnAzure\controller\AppFormController.class
+com\systemdesign\BasicLOSOnAzure\dto\ErrorResponseDto.class
+com\systemdesign\BasicLOSOnAzure\controller\CustomerDtlsContoller.class
+com\systemdesign\BasicLOSOnAzure\dto\CustomerDto.class
+com\systemdesign\BasicLOSOnAzure\controller\DocUploadController.class
+com\systemdesign\BasicLOSOnAzure\dto\ResponseDto.class
+com\systemdesign\BasicLOSOnAzure\constants\AccountsConstants.class
+com\systemdesign\BasicLOSOnAzure\controller\paymentscontroller.class
